@@ -1,9 +1,12 @@
 {
+  "homepage": "http://taruvar-mittal.github.io/3D-StackGame",
   "name": "tower-stack-game",
   "version": "1.0.0",
   "description": "Tower stack Game",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "browserify src/index.js -o build/bundle.js",
     "start": "budo src/index.js:build/bundle.js --port 3000",
     "clean": "rm build/bundle.js"
@@ -13,11 +16,13 @@
   "dependencies": {
     "acorn": "^6.4.1",
     "browserify": "^16.2.3",
+    "gh-pages": "^3.1.0",
     "gsap": "^2.0.2",
     "serve": "^10.1.2",
     "three": "^0.99.0"
   },
   "devDependencies": {
-    "budo": "^11.6.2"
+    "budo": "^11.6.2",
+    "gh-pages": "^2.1.1"
   }
 }
