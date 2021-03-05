@@ -1,6 +1,6 @@
 {
   "homepage": "http://taruvar-mittal.github.io/3D-StackGame",
-  "name": "tower-stack-game",
+  "name": "stack-game",
   "version": "1.0.0",
   "description": "Tower stack Game",
   "main": "index.js",
@@ -22,7 +22,7 @@
     "three": "^0.99.0"
   },
   "devDependencies": {
-    "budo": "^11.6.2",
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "budo": "^11.6.2"
   }
 }
